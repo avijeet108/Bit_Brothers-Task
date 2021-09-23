@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
               ))
             : Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Container(
                     child: Image.asset('images/logo.png'),
@@ -64,43 +64,51 @@ class _HomeState extends State<Home> {
                   ),
                   Text(
                     "${loggedinuser.username}",
-                    style: TextStyle(color: Colors.teal, fontSize: 20.0),
+                    style: TextStyle(
+                        color: Colors.teal,
+                        fontSize: 20.0,
+                        fontStyle: FontStyle.italic),
                   ),
                   Text(
                     "${loggedinuser.email}",
-                    style: TextStyle(color: Colors.teal, fontSize: 20.0),
+                    style: TextStyle(
+                        color: Colors.teal,
+                        fontSize: 20.0,
+                        fontStyle: FontStyle.italic),
                   ),
                   SizedBox(
                     height: 30.0,
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.teal,
-                      borderRadius: BorderRadius.circular(30.0),
-                    ),
-                    child: TextButton(
-                      onPressed: () {
-                        logout(context);
-                      },
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.logout,
-                            color: Colors.lime[200],
-                            size: 27.0,
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              'LogOut',
-                              style: TextStyle(
-                                  color: Colors.lime[200],
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold),
+                  Material(
+                    elevation: 15.0,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.teal,
+                      ),
+                      child: TextButton(
+                        onPressed: () {
+                          logout(context);
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.logout,
+                              color: Colors.lime[200],
+                              size: 27.0,
                             ),
-                          )
-                        ],
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'LogOut',
+                                style: TextStyle(
+                                    color: Colors.lime[200],
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   )

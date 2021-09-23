@@ -80,18 +80,8 @@ class _LoginState extends State<Login> {
                                 Icons.email,
                                 color: Colors.teal,
                               ),
-                              focusedBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30.0),
-                                borderSide:
-                                    BorderSide(color: Colors.teal, width: 2.0),
-                              ),
-                              enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(30.0),
-                                borderSide: BorderSide(
-                                  color: Colors.teal,
-                                  width: 2.0,
-                                ),
-                              ),
+                              border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(30.0)),
                               labelText: 'Email',
                               labelStyle: TextStyle(color: Colors.teal)),
                         ),
@@ -118,18 +108,8 @@ class _LoginState extends State<Login> {
                             passwordController.text = value!;
                           },
                           decoration: InputDecoration(
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30.0),
-                              borderSide:
-                                  BorderSide(color: Colors.teal, width: 2.0),
-                            ),
-                            enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30.0),
-                              borderSide: BorderSide(
-                                color: Colors.teal,
-                                width: 2.0,
-                              ),
-                            ),
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(30.0)),
                             prefixIcon: Icon(
                               Icons.vpn_key,
                               color: Colors.teal,
@@ -157,7 +137,7 @@ class _LoginState extends State<Login> {
                     width: double.infinity,
                     child: TextButton(
                       style: TextButton.styleFrom(
-                        elevation: 5.0,
+                        elevation: 15.0,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0)),
                         backgroundColor: Colors.teal,
