@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "721023149140",
+    "project_id": "emailpasswordauth-a4323",
+    "storage_bucket": "emailpasswordauth-a4323.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721023149140:android:4f8f955cc097bd9265f9c1",
+        "android_client_info": {
+          "package_name": "com.avijeet.email_password_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721023149140-li22pie0eld6drumkpqbp37kpormb7ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKAZ1mICJf1RsDdHBHZtYuTv7kvWJximw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721023149140-li22pie0eld6drumkpqbp37kpormb7ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
